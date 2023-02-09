@@ -42,6 +42,7 @@ resource "azurerm_security_center_subscription_pricing" "mdc_cloud_posture" {
   resource_type = "CloudPosture"
 }
 
+/*
 resource "azurerm_security_center_setting" "setting_mcas" {
   setting_name = "MCAS"
   enabled      = false
@@ -51,6 +52,7 @@ resource "azurerm_security_center_setting" "setting_mde" {
   setting_name = "WDATP"
   enabled      = false
 }
+*/
 
 resource "azurerm_security_center_contact" "mdc_contact" {
   email = "security@level20.com"
