@@ -44,12 +44,12 @@ resource "azurerm_security_center_subscription_pricing" "mdc_cloud_posture" {
 
 resource "azurerm_security_center_setting" "setting_mcas" {
   setting_name = "MCAS"
-  enabled      = true
+  enabled      = false
 }
 
 resource "azurerm_security_center_setting" "setting_mde" {
   setting_name = "WDATP"
-  enabled      = true
+  enabled      = false
 }
 
 resource "azurerm_security_center_contact" "mdc_contact" {
