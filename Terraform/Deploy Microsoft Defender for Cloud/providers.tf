@@ -8,6 +8,13 @@ terraform {
       version = "~>2.0"
     }
   }
+  backend "remote" {
+    organization = "level20-devops"
+
+    workspaces {
+      name = "security-ms-defender-for-cloud-ws"
+    }
+  }
 }
 
 provider "azurerm" {
